@@ -71,7 +71,7 @@ pub struct DocumentSymbolParams {
 /// that appear in a document. Document symbols can be hierarchical and they have two ranges:
 /// one that encloses its definition and one that points to its most interesting range,
 /// e.g. the range of an identifier.
-#[derive(Debug, Eq, PartialEq, Clone, Deserialize, Serialize)]
+#[derive(Debug, Eq, PartialEq, Clone, Deserialize, Serialize, Default)]
 #[serde(rename_all = "camelCase")]
 pub struct DocumentSymbol {
     /// The name of this symbol.
